@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Compose App</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
     <script type="application/javascript" src="skiko.js"></script>
 </head>
 <body>
@@ -34,7 +35,7 @@
     }
 
     if (hasSupportOfAllRequiredWasmFeatures()) {
-        body.appendChild(createScript("composeApp-wasm-js.js"))
+        body.appendChild(createScript("composeApp-wasm.js"))
     } else {
         body.appendChild(createScript("composeApp-js.js"))
     }
